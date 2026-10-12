@@ -24,6 +24,10 @@ The container app also provides a standalone preview of the effect interface.
 
 The release script is `scripts/build-release-installer.sh`. Its default `local` mode builds an unsigned installer for local use. The `public` mode signs the app and installer with Developer ID, submits the package to Apple for notarization, staples the ticket, and checks the result. It requires valid `Developer ID Application` and `Developer ID Installer` identities and a configured `notarytool` keychain profile.
 
+## Uninstall
+
+Close GarageBand, then run `sudo bash scripts/uninstall-bruma.sh` in Terminal. The uninstaller removes `/Applications/Bruma.app` and unregisters its Audio Unit extension. It keeps user presets and other user data.
+
 ## Compatibility
 
 - macOS 12 or later
